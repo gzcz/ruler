@@ -4,11 +4,12 @@
 		"tslint:recommended"
 	],
 	"rules": {
+		"typedef": [true, "parameter"],
 		"jsdoc-format": false,
 		"forin": false,
 		"no-console": false,
         "no-any": false,
-        "no-empty-interface": false,
+        "no-empty": false,
 		"interface-name": false,
 		"indent": [
 			true,

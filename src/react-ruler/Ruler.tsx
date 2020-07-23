@@ -107,8 +107,8 @@ export default class Ruler extends React.PureComponent<RulerProps> implements Ru
                 //     : [isDirectionStart ? 17 : width - 17, startPos - 4];
 
                 const [startX, startY] = isHorizontal
-                ? [startPos + 3, isDirectionStart ? 25 : height - 12]
-                : [isDirectionStart ? 17 : width - 17, startPos + 2];
+                    ? [startPos + 3, isDirectionStart ? 25 : height - 12]
+                    : [isDirectionStart ? 12 : width - 12, startPos - 4];
 
                 let text = `${(i + minRange) * unit}`;
 

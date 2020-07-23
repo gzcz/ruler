@@ -1,7 +1,7 @@
 {
     "name": "@sugo/react-ruler",
-    "version": "0.5.0",
-    "description": "A Vanilla Ruler component that can draw grids and scroll infinitely.",
+    "version": "0.5.1",
+    "description": "可以绘制表格和滑动的React标尺刻度组件",
     "main": "./dist/ruler.cjs.js",
     "module": "./dist/ruler.esm.js",
     "sideEffects": false,
@@ -34,7 +34,7 @@
         "type": "git",
         "url": "git+https://github.com/gzcz/ruler"
     },
-    "author": "Daybrush",
+    "author": "chendahai",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/gzcz/ruler/issues"
