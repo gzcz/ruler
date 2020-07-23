@@ -1,4 +1,5 @@
-import { RulerProps, RulerInterface } from "@scena/react-ruler/declaration/types";
+
+import { RulerProps, RulerInterface } from "../packages/react-ruler/src/react-ruler/types";
 
 export const PROPERTIES: Array<keyof RulerProps> = [
     "type", "width", "height",

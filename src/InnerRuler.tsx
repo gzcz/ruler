@@ -1,7 +1,7 @@
 import * as React from "react";
 import { createPortal } from "react-dom";
 import { ref } from "framework-utils";
-import ReactRuler from "@scena/react-ruler";
+import ReactRuler from "../packages/react-ruler/src/react-ruler";
 import { InnerRulerProps } from "./types";
 
 export default class InnerRuler extends React.Component<InnerRulerProps, InnerRulerProps> {

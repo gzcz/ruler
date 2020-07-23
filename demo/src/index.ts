@@ -4,9 +4,14 @@ import "./index.css";
 
 const ruler1 = new Ruler(document.querySelector(".ruler.horizontal"), {
     type: "horizontal",
+    unit: '100',
+    zoom: '0.5'
 });
 const ruler2 = new Ruler(document.querySelector(".ruler.vertical"), {
     type: "vertical",
+    direction: "start",
+    unit: '100',
+    zoom: '0.5'
 });
 
 window.addEventListener("resize", () => {

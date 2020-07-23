@@ -2,7 +2,7 @@ import { ref, Properties } from "framework-utils";
 import * as React from "react";
 import { render } from "react-dom";
 import { PROPERTIES } from "./consts";
-import { RulerInterface, RulerProps } from "@scena/react-ruler/declaration/types";
+import { RulerInterface, RulerProps } from "../packages/react-ruler/src/react-ruler/types";
 import InnerRuler from "./InnerRuler";
 
 @Properties(PROPERTIES, (prototype, property) => {

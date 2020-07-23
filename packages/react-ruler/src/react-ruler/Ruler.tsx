@@ -102,9 +102,13 @@ export default class Ruler extends React.PureComponent<RulerProps> implements Ru
             const startPos = ((i + minRange) * unit - scrollPos) * zoom;
 
             if (startPos >= -zoomUnit && startPos < size) {
+                // const [startX, startY] = isHorizontal
+                //     ? [startPos + 3, isDirectionStart ? 17 : height - 17]
+                //     : [isDirectionStart ? 17 : width - 17, startPos - 4];
+
                 const [startX, startY] = isHorizontal
-                    ? [startPos + 3, isDirectionStart ? 17 : height - 17]
-                    : [isDirectionStart ? 17 : width - 17, startPos - 4];
+                ? [startPos + 3, isDirectionStart ? 25 : height - 12]
+                : [isDirectionStart ? 17 : width - 17, startPos + 2];
 
                 let text = `${(i + minRange) * unit}`;
 
@@ -116,7 +120,8 @@ export default class Ruler extends React.PureComponent<RulerProps> implements Ru
                 } else {
                     context.save();
                     context.translate(startX, startY);
-                    context.rotate(-Math.PI / 2);
+                    // context.rotate(-Math.PI / 2);
+                    context.rotate(90 * Math.PI / 180);
                     context.fillText(text, 0, 0);
                     context.restore();
                 }
